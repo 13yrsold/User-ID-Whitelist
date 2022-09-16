@@ -1,0 +1,10 @@
+local LP = game:GetService("Players").Local Player 
+local UserIDWhitelist = {
+    [748352] = true;
+}
+
+if UserIDWhitelist[LP.UserId] then
+    end
+else
+    LP:Kick("You are not whitelisted")
+end
